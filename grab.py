@@ -16,8 +16,8 @@ def getHTMLdocument(url):
 
 
 
-i = 2
-while i < 5:
+i = 1
+while i < 18:
   print(i)
 
   # assign required credentials
