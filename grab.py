@@ -39,7 +39,7 @@ while i < 5:
   for link in soup.find_all('a', 
                           attrs={'href': re.compile("^/resources")}):
     # display the actual urls
-    print(link.get('href'))  
+    print(link)  
 
 
   i += 1
