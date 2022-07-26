@@ -35,7 +35,7 @@ while i < 18:
   
   
   # find all the anchor tags with "href" 
-  # attribute starting with "https://"
+  # attribute starting with "resources"
   for link in soup.find_all('a', 
                           attrs={'href': re.compile("^/resources")}):
     # display the actual urls
