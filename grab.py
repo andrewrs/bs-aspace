@@ -38,9 +38,11 @@ while i < 18:
   # attribute starting with "resources"
   for link in soup.find_all('a', 
                           attrs={'href': re.compile("^/resources")}):
-    # display the actual urls
-    print(link)  
-
+    # convert to string
+    alink = str(link)
+    
+    # print anchor element with absolute URLs
+    print(alink.replace("/resources", "https://aspace.gmu.edu/resources"))
 
   i += 1
 
